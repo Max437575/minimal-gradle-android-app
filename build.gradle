@@ -1,0 +1,33 @@
+buildscript {
+	repositories {
+		google()
+		jcenter()
+		mavenCentral()
+	}
+	dependencies {
+		classpath "com.android.tools.build:gradle:8.4.2"
+	}
+}
+
+allprojects {
+	repositories {
+		google()
+		jcenter()
+		mavenCentral()
+	}
+}
+
+apply plugin: "com.android.application"
+
+android {
+	compileSdk 33
+	buildToolsVersion "34.0.0"
+	namespace "com.uwu__alleskleber.game"
+	defaultConfig {
+        applicationId "com.uwu__alleskleber.game"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+}
